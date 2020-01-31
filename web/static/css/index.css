@@ -1,0 +1,19 @@
+{% load static %}
+.header{
+    background-color:#7FDBFF !important;
+    height:90px !important;
+    text-align:center !important;
+    margin:auto !important;
+}
+body{
+    background-image: url(../img/body.png);
+}
+.center_margin {
+    text-align:center ; margin:auto;
+}
+.size_of_firstrow{
+    height: 400px !important;
+}
+.newsbox{
+    border-top:0px solid #AAAAAA;background-color:#780620;font-size: 12pt;padding-top:2px;fontcor:#8B0000;
+}
