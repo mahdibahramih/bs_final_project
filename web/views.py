@@ -19,7 +19,7 @@ def panel(request):
     cli = client.objects.get(token=client_id)
     if cli is not None :  
         posters = poster.objects.filter(clients = cli)
-        akhbar = news.objects.filter(clients = client)
+        akhbar = news.objects.filter(clients = cli)
         con={'posters' : posters  , 'akhbar' : akhbar}
         return render(request ,'panel.html' , con)
     else:
