@@ -31,3 +31,12 @@ class poster(models.Model):
     clients = models.ForeignKey(client, on_delete=models.CASCADE)
     def __str__(self):
         return "{}  ----  {} ---- {}   --------------------- {}".format(self.title , self.text , self.timetolive , self.field_name)
+
+
+
+class subscribed(models.Model):
+    name = models.CharField(max_length=50)
+    phone = models.CharField(max_length=11)
+    email = models.CharField(max_length=50)
+    def __str__(self):
+        return "{}  -----  {} ----- {} ".format(self.name , self.phone , self.email)
